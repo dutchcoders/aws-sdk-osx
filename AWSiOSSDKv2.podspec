@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform     = :osx, '10.7'
   s.source       = { :git => 'https://github.com/graceful/aws-sdk-ios.git',
                      :tag => s.version}
-  s.frameworks   = 'Chameleon','Foundation','SystemConfiguration'
+  s.frameworks   = 'Foundation','SystemConfiguration'
   s.library      = 'sqlite3','z'
 
   s.dependency 'Bolts', '~> 1.1.0'
