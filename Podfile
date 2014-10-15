@@ -8,4 +8,4 @@ pod 'UICKeyChainStore', '~> 1.0.5'
 pod 'Reachability', '~> 3.1.1'
 pod 'GZIP', '~> 1.0.3'
 
-pod 'Chameleon', '~> 0.0'
+pod 'Chameleon'
