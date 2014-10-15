@@ -10,7 +10,6 @@
 		38627E3F19253F5500EF30EF /* AWSCognitoIdentityServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38627E3E19253F5500EF30EF /* AWSCognitoIdentityServiceTests.m */; };
 		388CA0A21926CA3800AF5A50 /* AWSCognitoCredentialsProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 388CA0A11926CA3800AF5A50 /* AWSCognitoCredentialsProviderTests.m */; };
 		38D2089419C2A67D0024D82A /* AWSIdentityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2089319C2A67D0024D82A /* AWSIdentityProvider.m */; };
-		6F8CA45C05144354BEC9C638 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A0CE70F1DF4EEE8E04D464 /* libPods.a */; };
 		BD1861BF19A41395003C8E42 /* ec2-input.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BD19A41395003C8E42 /* ec2-input.json */; };
 		BD1861C019A41395003C8E42 /* ec2-output.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BE19A41395003C8E42 /* ec2-output.json */; };
 		BD19ED05188F15EB001F5B98 /* AWSS3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19ED04188F15EB001F5B98 /* AWSS3Tests.m */; };
@@ -263,7 +262,8 @@
 		388CA0A11926CA3800AF5A50 /* AWSCognitoCredentialsProviderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AWSCognitoCredentialsProviderTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		38D2089219C2A67D0024D82A /* AWSIdentityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSIdentityProvider.h; sourceTree = "<group>"; };
 		38D2089319C2A67D0024D82A /* AWSIdentityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSIdentityProvider.m; sourceTree = "<group>"; };
-		AAF85B9700504764BCD966E3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		537BECC41D2884F4A6265BE1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A6F8D252CBA9A8EE5563AF2D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BD1861BD19A41395003C8E42 /* ec2-input.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ec2-input.json"; sourceTree = "<group>"; };
 		BD1861BE19A41395003C8E42 /* ec2-output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ec2-output.json"; sourceTree = "<group>"; };
 		BD19ED04188F15EB001F5B98 /* AWSS3Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AWSS3Tests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -715,13 +715,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5D83DA1857AA3100907C25 /* Foundation.framework in Frameworks */,
-				6F8CA45C05144354BEC9C638 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92F1B608D2203083E45B0BB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8D252CBA9A8EE5563AF2D /* Pods.debug.xcconfig */,
+				537BECC41D2884F4A6265BE1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BDD11DF2193FA13600AF60E1 /* AWSiOSSDKAnalyticsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1410,7 +1418,7 @@
 				BDD11DF2193FA13600AF60E1 /* AWSiOSSDKAnalyticsTests */,
 				CE5D83D81857AA3100907C25 /* Frameworks */,
 				CE5D83D71857AA3100907C25 /* Products */,
-				AAF85B9700504764BCD966E3 /* Pods.xcconfig */,
+				92F1B608D2203083E45B0BB4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2021,7 +2029,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDD77712193FC6B100F04070 /* ShellScript */ = {
@@ -2370,6 +2378,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = AWSiOSSDKv2Tests;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -2396,6 +2405,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = AWSiOSSDKv2Tests;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -2472,28 +2482,32 @@
 		};
 		CE5D83FA1857AA3100907C25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF85B9700504764BCD966E3 /* Pods.xcconfig */;
+			baseConfigurationReference = A6F8D252CBA9A8EE5563AF2D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AWSiOSSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWSiOSSDKv2-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AWSiOSSDKv2;
+				SDKROOT = macosx10.9;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		CE5D83FB1857AA3100907C25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF85B9700504764BCD966E3 /* Pods.xcconfig */;
+			baseConfigurationReference = 537BECC41D2884F4A6265BE1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AWSiOSSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWSiOSSDKv2-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AWSiOSSDKv2;
+				SDKROOT = macosx10.9;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
