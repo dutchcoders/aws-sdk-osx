@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
   s.homepage     = 'http://aws.amazon.com/sdkforios'
   s.license      = 'Apache License, Version 2.0'
   s.author       = { 'Amazon Web Services' => 'amazonwebservices' }
-  s.platform     = :osx, '10.7'
   s.source       = { :git => 'https://github.com/graceful/aws-sdk-ios.git',
                      :tag => s.version}
-  s.frameworks   = 'Foundation','SystemConfiguration'
+  s.ios.frameworks   = 'UIKit','Foundation','SystemConfiguration'
+  s.osx.frameworks   = 'Foundation','SystemConfiguration'
   s.library      = 'sqlite3','z'
 
   s.dependency 'Bolts', '~> 1.1.0'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.dependency 'UICKeyChainStore', '~> 1.0.5'
   s.dependency 'Reachability', '~> 3.1.1'
   s.dependency 'GZIP', '~> 1.0.3'
-  s.dependency 'Chameleon', '~> 0.0'
+  s.osx.dependency 'Chameleon', '~> 0.0'
 
   s.requires_arc = true
 
