@@ -13,11 +13,14 @@
  * permissions and limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
 #import "AWSMobileAnalyticsRandomUUIDGenerator.h"
 
-
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#ifdef UI_USER_INTERFACE_IDIOM
+    #import <UIKit/UIKit.h>
+    #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#else
+    #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) TRUE
+#endif
 
 @implementation AWSMobileAnalyticsRandomUUIDGenerator 
 

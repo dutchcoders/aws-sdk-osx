@@ -14,7 +14,11 @@
  */
 
 #import <sys/xattr.h>
+
+#ifdef UI_USER_INTERFACE_IDIOM
 #import <UIKit/UIKit.h>
+#endif
+
 #import "Reachability.h"
 #import "AWSMobileAnalyticsIOSSystem.h"
 #import "AWSMobileAnalyticsIOSLifeCycleManager.h"

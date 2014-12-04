@@ -14,7 +14,11 @@
  */
 
 #import "AWSClientContext.h"
+
+#ifdef UI_USER_INTERFACE_IDIOM
 #import <UIKit/UIKit.h>
+#endif
+
 #import <sys/types.h>
 #import <sys/sysctl.h>
 #import "AWSLogging.h"
@@ -59,20 +63,35 @@ NSString *const AWSClientContextUnknown = @"Unknown";
             _appName = AWSClientContextUnknown;
         }
 
+#ifdef UI_USER_INTERFACE_IDIOM
         UIDevice *currentDevice = [UIDevice currentDevice];
         _devicePlatformVersion = [currentDevice systemVersion];
+#else
+        NSProcessInfo *pInfo = [NSProcessInfo processInfo];
+        _devicePlatformVersion = [pInfo operatingSystemVersionString];
+#endif
+        
         if (!_devicePlatformVersion) {
             _devicePlatformVersion = AWSClientContextUnknown;
         }
 
+#ifdef UI_USER_INTERFACE_IDIOM
         _devicePlatform = [currentDevice systemName];
+#else
+        _devicePlatform = @"OSX";
+#endif
+        
         if (!_devicePlatform) {
             _devicePlatform = AWSClientContextUnknown;
         }
 
         _deviceManufacturer = AWSClientContextManufacturer;
 
+#ifdef UI_USER_INTERFACE_IDIOM
         _deviceModel = [currentDevice model];
+#else
+        _deviceModel = @"OSX";
+#endif
         if (!_deviceModel) {
             _deviceModel = AWSClientContextUnknown;
         }

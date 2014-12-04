@@ -23,7 +23,10 @@
 #import "AWSMobileAnalyticsSerializerFactory.h"
 #import "AWSMobileAnalyticsStringUtils.h"
 #import "AWSLogging.h"
+
+#ifdef UI_USER_INTERFACE_IDIOM
 #import <UIKit/UIKit.h>
+#endif
 
 static NSSet* RETRY_REQUEST_CODES = nil;
 static unsigned int MAX_OPERATIONS = 1000;

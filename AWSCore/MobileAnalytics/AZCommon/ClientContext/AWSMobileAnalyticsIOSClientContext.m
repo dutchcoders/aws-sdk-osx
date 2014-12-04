@@ -14,7 +14,11 @@
  */
 
 #import "AWSMobileAnalyticsIOSClientContext.h"
+
+#ifdef UI_USER_INTERFACE_IDIOM
 #import <UIKit/UIKit.h>
+#endif
+
 #import "AWSMobileAnalyticsSerializerFactory.h"
 #import "AWSMobileAnalyticsStringUtils.h"
 #import <sys/types.h>
@@ -83,12 +87,23 @@ NSString* const UNKNOWN = @"Unknown";
         _appName = appName;
         
         //Device Details
+#ifdef UI_USER_INTERFACE_IDIOM
         UIDevice* currentDevice = [UIDevice currentDevice];
-        NSString *autoUpdatingLoaleIdentifier = [[NSLocale autoupdatingCurrentLocale] localeIdentifier];
         _devicePlatform = [currentDevice systemName] == nil ? UNKNOWN : [currentDevice systemName];
         _deviceModel = [currentDevice model] == nil ? UNKNOWN : [currentDevice model];
-        _deviceModelVersion = [self deviceModelVersionCode] == nil ? UNKNOWN : [self deviceModelVersionCode];
         _devicePlatformVersion = [currentDevice systemVersion] == nil ? UNKNOWN : [currentDevice systemVersion];
+#else
+        _devicePlatform = @"OSX";
+        _deviceModel = @"OSX";
+        
+        NSProcessInfo *pInfo = [NSProcessInfo processInfo];
+        NSString *version = [pInfo operatingSystemVersionString];
+        
+        _devicePlatformVersion = version;
+#endif
+        
+        NSString *autoUpdatingLoaleIdentifier = [[NSLocale autoupdatingCurrentLocale] localeIdentifier];
+        _deviceModelVersion = [self deviceModelVersionCode] == nil ? UNKNOWN : [self deviceModelVersionCode];
         _deviceManufacturer = @"apple";
         _deviceLocale = autoUpdatingLoaleIdentifier == nil ? UNKNOWN : autoUpdatingLoaleIdentifier;
         

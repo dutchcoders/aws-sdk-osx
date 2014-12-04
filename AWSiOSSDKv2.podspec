@@ -22,7 +22,6 @@ Pod::Spec.new do |s|
   s.dependency 'UICKeyChainStore', '~> 1.0.5'
   s.dependency 'Reachability', '~> 3.1.1'
   s.dependency 'GZIP', '~> 1.0.3'
-  s.osx.dependency 'Chameleon', '~> 0.0'
 
   s.requires_arc = true
 

@@ -14,7 +14,10 @@
  */
 
 #import "AWSMobileAnalyticsIOSLifeCycleManager.h"
+
+#ifdef UI_USER_INTERFACE_IDIOM
 #import <UIKit/UIKit.h>
+#endif
 
 NSString* const AWSInsightsBackground = @"com.amazon.insights.AWSMobileAnalyticsIOSLifeCycleManager.background";
 NSString* const AWSInsightsForeground = @"com.amazon.insights.AWSMobileAnalyticsIOSLifeCycleManager.foreground";
@@ -82,6 +85,7 @@ NSString* const AWSInsightsBackgroundQueueKey = @"com.amazon.insights.AWSMobileA
         self.queue = [[NSOperationQueue alloc] init];
         [self.queue setMaxConcurrentOperationCount:1];
         
+#ifdef UI_USER_INTERFACE_IDIOM
         [[NSNotificationCenter defaultCenter] addObserver: self
                                                  selector: @selector(applicationDidEnterBackground:)
                                                      name: UIApplicationDidEnterBackgroundNotification
@@ -92,12 +96,14 @@ NSString* const AWSInsightsBackgroundQueueKey = @"com.amazon.insights.AWSMobileA
                                                  selector: @selector(applicationDidEnterForeground:)
                                                      name: UIApplicationWillEnterForegroundNotification
                                                    object: nil];
+#endif
     }
     return self;
 }
 
 -(void)dealloc
 {
+#ifdef UI_USER_INTERFACE_IDIOM
     // no need to call [super deallc], it's done automatically by arc
     [[NSNotificationCenter defaultCenter] removeObserver: self
                                                     name: UIApplicationDidEnterBackgroundNotification
@@ -106,6 +112,7 @@ NSString* const AWSInsightsBackgroundQueueKey = @"com.amazon.insights.AWSMobileA
     [[NSNotificationCenter defaultCenter] removeObserver: self
                                                     name: UIApplicationWillEnterForegroundNotification
                                                   object: nil];
+#endif
 }
 
 -(id)addBackgroundObserverUsingBlock:(LifeCycleNotificationBlock)block
@@ -130,11 +137,14 @@ NSString* const AWSInsightsBackgroundQueueKey = @"com.amazon.insights.AWSMobileA
 
 -(void)executeBackgroundTasks:(AWSBackgroundQueue*) queue
 {
+#ifdef UI_USER_INTERFACE_IDIOM
     UIApplication *app = [UIApplication sharedApplication];
     __block UIBackgroundTaskIdentifier task = [app beginBackgroundTaskWithExpirationHandler:^{
         [app endBackgroundTask:task];
         task = UIBackgroundTaskInvalid;
     }];
+#endif
+    
     // Start the long-running task and return immediately.
     __block NSUInteger blockCount = [queue count];
     if(blockCount == 0)
@@ -152,8 +162,11 @@ NSString* const AWSInsightsBackgroundQueueKey = @"com.amazon.insights.AWSMobileA
                 blockCount--;
                 if(blockCount == 0)
                 {
+                    
+#ifdef UI_USER_INTERFACE_IDIOM
                     [app endBackgroundTask:task];
                     task = UIBackgroundTaskInvalid;
+#endif
                 }
             }
             @finally

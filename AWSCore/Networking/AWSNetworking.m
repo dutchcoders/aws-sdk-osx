@@ -14,7 +14,11 @@
  */
 
 #import "AWSNetworking.h"
+
+#ifdef UI_USER_INTERFACE_IDIOM
 #import <UIKit/UIKit.h>
+#endif
+
 #import "AWSCategory.h"
 #import "AWSModel.h"
 #import "AWSURLSessionManager.h"
@@ -430,8 +434,17 @@ NSString *const AWSiOSSDKVersion = @"2.0.8";
     static NSString *_userAgent = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        
+#ifdef UI_USER_INTERFACE_IDIOM
         NSString *systemName = [[[UIDevice currentDevice] systemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
         NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+#else
+        NSString *systemName = @"OSX";
+        
+        NSProcessInfo *pInfo = [NSProcessInfo processInfo];
+        NSString *systemVersion = [pInfo operatingSystemVersionString];
+#endif
+        
         NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
         _userAgent = [NSString stringWithFormat:@"aws-sdk-iOS/%@ %@/%@ %@", AWSiOSSDKVersion, systemName, systemVersion, localeIdentifier];
     });
