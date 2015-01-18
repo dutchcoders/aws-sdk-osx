@@ -1,7 +1,7 @@
 # Version 2 of the AWS SDK for OS X (Based on the iOS Version)
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/AWSiOSSDKv2/badge.png)](http://cocoadocs.org/docsets/AWSiOSSDKv2)
-[![Platform](https://img.shields.io/cocoapods/p/AFNetworking.svg)](http://cocoadocs.org/docsets/AWSiOSSDKv2)
+[![Platform](https://img.shields.io/badge/platform-osx-green.svg)](http://cocoadocs.org/docsets/AWSiOSSDKv2)
 
 ## Highlights
 

@@ -23,6 +23,14 @@
 		6DED12F31A64A16B001B193F /* AWSLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEDB19916C5100A318A3 /* AWSLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DED12F41A64A16F001B193F /* AWSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEDD19916C5100A318A3 /* AWSModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DED12F51A64A172001B193F /* AWSSynchronizedMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEDF19916C5100A318A3 /* AWSSynchronizedMutableDictionary.h */; };
+		6DED13041A6C5F1D001B193F /* AWSIdentityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D2089219C2A67D0024D82A /* AWSIdentityProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED13051A6C5F65001B193F /* AWSURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEE719916C8400A318A3 /* AWSURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED13061A6C5F6C001B193F /* AWSSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4AB8D719085CFB00E0600E /* AWSSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED13071A6C5F6F001B193F /* AWSURLRequestRetryHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34B18DB716B00F8C75F /* AWSURLRequestRetryHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED13081A6C5F75001B193F /* AWSURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34D18DB716B00F8C75F /* AWSURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED13091A6C5F7A001B193F /* AWSURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34F18DB716B00F8C75F /* AWSURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED130A1A6C5F7F001B193F /* AWSValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F35118DB716B00F8C75F /* AWSValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED130B1A6C5F90001B193F /* AWSClientContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CED514031954B83B00D693F7 /* AWSClientContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD1861BF19A41395003C8E42 /* ec2-input.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BD19A41395003C8E42 /* ec2-input.json */; };
 		BD1861C019A41395003C8E42 /* ec2-output.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BE19A41395003C8E42 /* ec2-output.json */; };
 		BD19ED05188F15EB001F5B98 /* AWSS3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19ED04188F15EB001F5B98 /* AWSS3Tests.m */; };
@@ -1864,16 +1872,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D57DEC21A648E8C008213DE /* AWSCore.h in Headers */,
-				6DED12C01A649C3E001B193F /* AWSService.h in Headers */,
 				6DED12EF1A649FFB001B193F /* AWSNetworking.h in Headers */,
 				6DED12F01A64A10E001B193F /* AWSCredentialsProvider.h in Headers */,
-				6DED12F11A64A125001B193F /* AWSServiceEnum.h in Headers */,
 				6D57DEBD1A648E6F008213DE /* S3.h in Headers */,
 				6D57DEBE1A648E71008213DE /* AWSS3.h in Headers */,
 				6D57DEC11A648E80008213DE /* AWSS3TransferManager.h in Headers */,
 				6DED12F21A64A167001B193F /* AWSCategory.h in Headers */,
 				6DED12F31A64A16B001B193F /* AWSLogging.h in Headers */,
 				6DED12F41A64A16F001B193F /* AWSModel.h in Headers */,
+				6DED13041A6C5F1D001B193F /* AWSIdentityProvider.h in Headers */,
+				6DED13051A6C5F65001B193F /* AWSURLSessionManager.h in Headers */,
+				6DED13061A6C5F6C001B193F /* AWSSerialization.h in Headers */,
+				6DED13071A6C5F6F001B193F /* AWSURLRequestRetryHandler.h in Headers */,
+				6DED13081A6C5F75001B193F /* AWSURLRequestSerialization.h in Headers */,
+				6DED13091A6C5F7A001B193F /* AWSURLResponseSerialization.h in Headers */,
+				6DED130A1A6C5F7F001B193F /* AWSValidation.h in Headers */,
+				6DED12F11A64A125001B193F /* AWSServiceEnum.h in Headers */,
+				6DED130B1A6C5F90001B193F /* AWSClientContext.h in Headers */,
+				6DED12C01A649C3E001B193F /* AWSService.h in Headers */,
 				6DED12F51A64A172001B193F /* AWSSynchronizedMutableDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
