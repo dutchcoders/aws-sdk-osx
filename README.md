@@ -1,9 +1,7 @@
-# Version 2 of the AWS SDK for iOS
+# Version 2 of the AWS SDK for OS X (Based on the iOS Version)
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/AWSiOSSDKv2/badge.png)](http://cocoadocs.org/docsets/AWSiOSSDKv2)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/AWSiOSSDKv2/badge.png)](http://cocoadocs.org/docsets/AWSiOSSDKv2)
-
-**Version 2 of the AWS Mobile SDK for iOS has reached General Availability (GA) and is no longer in Developer Preview.  Version 1 is deprecated as of September 29, 2014 and will continue to be available until December 31, 2014 in our [aws-sdk-ios-v1](https://github.com/aws/aws-sdk-ios-v1) repository. If you are building new apps, we recommend you use Version 2.**
+[![Platform](https://img.shields.io/cocoapods/p/AFNetworking.svg)](http://cocoadocs.org/docsets/AWSiOSSDKv2)
 
 ## Highlights
 
@@ -20,19 +18,10 @@
 ## Requirements
 
 * Xcode 5 and later
-* iOS 7 and later
-
-## Installation
-
-AWSiOSSDKv2 is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your **Podfile**:
-
-    pod "AWSiOSSDKv2"
-    pod "AWSCognitoSync"
-
-The detailed instructions are available at [Setup the SDK for iOS](http://docs.aws.amazon.com/mobile/sdkforios/developerguide/setup.html).
+* OS X 10.9 and later
 
 ## Getting Started is Easy Using Swift
+
 
 It is easy to use the AWS SDK for iOS with Swift. Please see five simple steps below to get started with Swift.
 
@@ -105,7 +94,9 @@ It is easy to use the AWS SDK for iOS with Swift. Please see five simple steps b
 	        return nil;
 	    }];
 
-## Talk to UsVisit the [Issues](/aws/aws-ask-ios-v2/issues) to leave feedback and to connect with other users of the SDK.
+## Talk to Us
+Visit the [Issues](/aws/aws-ask-ios-v2/issues) to leave feedback and to connect with other users of the SDK.
+
 
 ## Author
 

@@ -13,22 +13,16 @@
 		38D2089419C2A67D0024D82A /* AWSIdentityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2089319C2A67D0024D82A /* AWSIdentityProvider.m */; };
 		6D57DEBD1A648E6F008213DE /* S3.h in Headers */ = {isa = PBXBuildFile; fileRef = CE372B4A18DA874000D2CFD2 /* S3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D57DEBE1A648E71008213DE /* AWSS3.h in Headers */ = {isa = PBXBuildFile; fileRef = CE372B4418DA874000D2CFD2 /* AWSS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D57DEBF1A648E74008213DE /* AWSS3Model.h in Headers */ = {isa = PBXBuildFile; fileRef = CE372B4618DA874000D2CFD2 /* AWSS3Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D57DEC01A648E76008213DE /* AWSS3PreSignedURL.h in Headers */ = {isa = PBXBuildFile; fileRef = CE23E60A19BF7CD00036EDC0 /* AWSS3PreSignedURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D57DEC11A648E80008213DE /* AWSS3TransferManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CED6C36418EE3EC800A56FB2 /* AWSS3TransferManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D57DEC21A648E8C008213DE /* AWSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34218DB716B00F8C75F /* AWSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12B41A649BFE001B193F /* AWSIdentityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D2089219C2A67D0024D82A /* AWSIdentityProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12B51A649C01001B193F /* AWSCredentialsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F33E18DB716B00F8C75F /* AWSCredentialsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12B61A649C04001B193F /* AWSSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34018DB716B00F8C75F /* AWSSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12B81A649C13001B193F /* AWSURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEE719916C8400A318A3 /* AWSURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12B91A649C1E001B193F /* AWSSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4AB8D719085CFB00E0600E /* AWSSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12BA1A649C22001B193F /* AWSURLRequestRetryHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34B18DB716B00F8C75F /* AWSURLRequestRetryHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12BB1A649C28001B193F /* AWSURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34D18DB716B00F8C75F /* AWSURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12BC1A649C2A001B193F /* AWSURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34F18DB716B00F8C75F /* AWSURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12BD1A649C30001B193F /* AWSValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F35118DB716B00F8C75F /* AWSValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12BE1A649C35001B193F /* AWSServiceEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC25F5E195E4A4500675156 /* AWSServiceEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DED12BF1A649C39001B193F /* AWSClientContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CED514031954B83B00D693F7 /* AWSClientContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DED12C01A649C3E001B193F /* AWSService.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F35818DB716B00F8C75F /* AWSService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED12EF1A649FFB001B193F /* AWSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F34418DB716B00F8C75F /* AWSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED12F01A64A10E001B193F /* AWSCredentialsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55F33E18DB716B00F8C75F /* AWSCredentialsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED12F11A64A125001B193F /* AWSServiceEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC25F5E195E4A4500675156 /* AWSServiceEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED12F21A64A167001B193F /* AWSCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EED919916C5100A318A3 /* AWSCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED12F31A64A16B001B193F /* AWSLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEDB19916C5100A318A3 /* AWSLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED12F41A64A16F001B193F /* AWSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEDD19916C5100A318A3 /* AWSModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED12F51A64A172001B193F /* AWSSynchronizedMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16EEDF19916C5100A318A3 /* AWSSynchronizedMutableDictionary.h */; };
 		BD1861BF19A41395003C8E42 /* ec2-input.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BD19A41395003C8E42 /* ec2-input.json */; };
 		BD1861C019A41395003C8E42 /* ec2-output.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BE19A41395003C8E42 /* ec2-output.json */; };
 		BD19ED05188F15EB001F5B98 /* AWSS3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19ED04188F15EB001F5B98 /* AWSS3Tests.m */; };
@@ -1870,23 +1864,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D57DEC21A648E8C008213DE /* AWSCore.h in Headers */,
-				6DED12B41A649BFE001B193F /* AWSIdentityProvider.h in Headers */,
-				6DED12B51A649C01001B193F /* AWSCredentialsProvider.h in Headers */,
-				6DED12B61A649C04001B193F /* AWSSignature.h in Headers */,
-				6DED12B81A649C13001B193F /* AWSURLSessionManager.h in Headers */,
-				6DED12B91A649C1E001B193F /* AWSSerialization.h in Headers */,
-				6DED12BA1A649C22001B193F /* AWSURLRequestRetryHandler.h in Headers */,
-				6DED12BB1A649C28001B193F /* AWSURLRequestSerialization.h in Headers */,
-				6DED12BC1A649C2A001B193F /* AWSURLResponseSerialization.h in Headers */,
-				6DED12BD1A649C30001B193F /* AWSValidation.h in Headers */,
-				6DED12BE1A649C35001B193F /* AWSServiceEnum.h in Headers */,
-				6DED12BF1A649C39001B193F /* AWSClientContext.h in Headers */,
 				6DED12C01A649C3E001B193F /* AWSService.h in Headers */,
+				6DED12EF1A649FFB001B193F /* AWSNetworking.h in Headers */,
+				6DED12F01A64A10E001B193F /* AWSCredentialsProvider.h in Headers */,
+				6DED12F11A64A125001B193F /* AWSServiceEnum.h in Headers */,
 				6D57DEBD1A648E6F008213DE /* S3.h in Headers */,
 				6D57DEBE1A648E71008213DE /* AWSS3.h in Headers */,
-				6D57DEBF1A648E74008213DE /* AWSS3Model.h in Headers */,
-				6D57DEC01A648E76008213DE /* AWSS3PreSignedURL.h in Headers */,
 				6D57DEC11A648E80008213DE /* AWSS3TransferManager.h in Headers */,
+				6DED12F21A64A167001B193F /* AWSCategory.h in Headers */,
+				6DED12F31A64A16B001B193F /* AWSLogging.h in Headers */,
+				6DED12F41A64A16F001B193F /* AWSModel.h in Headers */,
+				6DED12F51A64A172001B193F /* AWSSynchronizedMutableDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
