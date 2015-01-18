@@ -95,7 +95,7 @@ It is easy to use the AWS SDK with Swift. Please see five simple steps below to 
 	    }];
 
 ## Talk to Us
-Visit the [Issues](/aws-sdk-osx/issues) to leave feedback and to connect with other users of the SDK.
+Visit the [Issues](https://github.com/soumis/aws-sdk-osx/issues) to leave feedback and to connect with other users of the SDK.
 
 
 ## Author
