@@ -23,7 +23,7 @@
 ## Getting Started is Easy Using Swift
 
 
-It is easy to use the AWS SDK for iOS with Swift. Please see five simple steps below to get started with Swift.
+It is easy to use the AWS SDK with Swift. Please see five simple steps below to get started with Swift.
 
 1. Create an Objective-C bridging header file.
 1. Import the service headers in the bridging header.
@@ -95,7 +95,7 @@ It is easy to use the AWS SDK for iOS with Swift. Please see five simple steps b
 	    }];
 
 ## Talk to Us
-Visit the [Issues](/aws/aws-ask-ios-v2/issues) to leave feedback and to connect with other users of the SDK.
+Visit the [Issues](/aws-sdk-osx/issues) to leave feedback and to connect with other users of the SDK.
 
 
 ## Author
