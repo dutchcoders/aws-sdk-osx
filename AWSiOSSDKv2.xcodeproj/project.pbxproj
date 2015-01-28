@@ -33,6 +33,9 @@
 		6DED130B1A6C5F90001B193F /* AWSClientContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CED514031954B83B00D693F7 /* AWSClientContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DED130C1A6C6134001B193F /* AWSS3Model.h in Headers */ = {isa = PBXBuildFile; fileRef = CE372B4618DA874000D2CFD2 /* AWSS3Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DED130D1A6C613D001B193F /* AWSS3PreSignedURL.h in Headers */ = {isa = PBXBuildFile; fileRef = CE23E60A19BF7CD00036EDC0 /* AWSS3PreSignedURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED13191A7981A8001B193F /* STS.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0986131922A7470006EA67 /* STS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED131A1A7981BA001B193F /* AWSSTS.h in Headers */ = {isa = PBXBuildFile; fileRef = CE09860D1922A7470006EA67 /* AWSSTS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED131B1A7981BE001B193F /* AWSSTSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE09860F1922A7470006EA67 /* AWSSTSModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD1861BF19A41395003C8E42 /* ec2-input.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BD19A41395003C8E42 /* ec2-input.json */; };
 		BD1861C019A41395003C8E42 /* ec2-output.json in Resources */ = {isa = PBXBuildFile; fileRef = BD1861BE19A41395003C8E42 /* ec2-output.json */; };
 		BD19ED05188F15EB001F5B98 /* AWSS3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19ED04188F15EB001F5B98 /* AWSS3Tests.m */; };
@@ -1874,6 +1877,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D57DEC21A648E8C008213DE /* AWSCore.h in Headers */,
+				6DED13191A7981A8001B193F /* STS.h in Headers */,
+				6DED131A1A7981BA001B193F /* AWSSTS.h in Headers */,
+				6DED131B1A7981BE001B193F /* AWSSTSModel.h in Headers */,
 				6DED12EF1A649FFB001B193F /* AWSNetworking.h in Headers */,
 				6DED12F01A64A10E001B193F /* AWSCredentialsProvider.h in Headers */,
 				6D57DEBD1A648E6F008213DE /* S3.h in Headers */,
