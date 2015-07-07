@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, AWSRegionType) {
     AWSRegionUnknown,
     AWSRegionUSEast1,
     AWSRegionUSWest1,
+    AWSRegionEUCentral1,
     AWSRegionEUWest1,
     AWSRegionAPSoutheast1,
     AWSRegionAPNortheast1,

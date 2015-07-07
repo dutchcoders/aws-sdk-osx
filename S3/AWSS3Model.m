@@ -227,6 +227,9 @@ NSString *const AWSS3ErrorDomain = @"com.amazonaws.AWSS3ErrorDomain";
         if ([value isEqualToString:@"EU"]) {
             return @(AWSS3BucketLocationConstraintEU);
         }
+        if ([value isEqualToString:@"eu-central-1"]) {
+            return @(AWSS3BucketLocationConstraintEUCentral1);
+        }
         if ([value isEqualToString:@"eu-west-1"]) {
             return @(AWSS3BucketLocationConstraintEUWest1);
         }
@@ -256,6 +259,8 @@ NSString *const AWSS3ErrorDomain = @"com.amazonaws.AWSS3ErrorDomain";
         switch ([value integerValue]) {
             case AWSS3BucketLocationConstraintEU:
                 return @"EU";
+            case AWSS3BucketLocationConstraintEUCentral1:
+                return @"eu-central-1";
             case AWSS3BucketLocationConstraintEUWest1:
                 return @"eu-west-1";
             case AWSS3BucketLocationConstraintUSWest1:
@@ -780,6 +785,9 @@ NSString *const AWSS3ErrorDomain = @"com.amazonaws.AWSS3ErrorDomain";
         if ([value isEqualToString:@"EU"]) {
             return @(AWSS3BucketLocationConstraintEU);
         }
+        if ([value isEqualToString:@"eu-central-1"]) {
+            return @(AWSS3BucketLocationConstraintEUCentral1);
+        }
         if ([value isEqualToString:@"eu-west-1"]) {
             return @(AWSS3BucketLocationConstraintEUWest1);
         }
@@ -809,6 +817,8 @@ NSString *const AWSS3ErrorDomain = @"com.amazonaws.AWSS3ErrorDomain";
         switch ([value integerValue]) {
             case AWSS3BucketLocationConstraintEU:
                 return @"EU";
+            case AWSS3BucketLocationConstraintEUCentral1:
+                return @"eu-central-1";
             case AWSS3BucketLocationConstraintEUWest1:
                 return @"eu-west-1";
             case AWSS3BucketLocationConstraintUSWest1:

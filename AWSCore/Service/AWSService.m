@@ -176,6 +176,7 @@
 NSString *const AWSRegionNameUSEast1 = @"us-east-1";
 NSString *const AWSRegionNameUSWest2 = @"us-west-2";
 NSString *const AWSRegionNameUSWest1 = @"us-west-1";
+NSString *const AWSRegionNameEUCentral1 = @"eu-central-1";
 NSString *const AWSRegionNameEUWest1 = @"eu-west-1";
 NSString *const AWSRegionNameAPSoutheast1 = @"ap-southeast-1";
 NSString *const AWSRegionNameAPSoutheast2 = @"ap-southeast-2";
@@ -242,6 +243,9 @@ NSString *const AWSServiceNameMobileAnalytics = @"mobileanalytics";
                 break;
             case AWSRegionUSWest1:
                 _regionName = AWSRegionNameUSWest1;
+                break;
+            case AWSRegionEUCentral1:
+                _regionName = AWSRegionNameEUCentral1;
                 break;
             case AWSRegionEUWest1:
                 _regionName = AWSRegionNameEUWest1;

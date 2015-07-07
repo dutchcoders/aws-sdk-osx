@@ -46,6 +46,7 @@ typedef NS_ENUM(NSInteger, AWSS3BucketCannedACL) {
 typedef NS_ENUM(NSInteger, AWSS3BucketLocationConstraint) {
     AWSS3BucketLocationConstraintUnknown,
     AWSS3BucketLocationConstraintEU,
+    AWSS3BucketLocationConstraintEUCentral1,
     AWSS3BucketLocationConstraintEUWest1,
     AWSS3BucketLocationConstraintUSWest1,
     AWSS3BucketLocationConstraintUSWest2,
